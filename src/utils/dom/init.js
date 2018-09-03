@@ -33,6 +33,7 @@ const sweetHTML = `
    </div>
    <div class="${swalClasses.content}">
      <div id="${swalClasses.content}"></div>
+     <form></form>
      <input class="${swalClasses.input}" />
      <input type="file" class="${swalClasses.file}" />
      <div class="${swalClasses.range}">

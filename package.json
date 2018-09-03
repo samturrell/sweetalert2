@@ -110,5 +110,6 @@
     "release": "node release"
   },
   "bugs": "https://github.com/sweetalert2/sweetalert2/issues",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }

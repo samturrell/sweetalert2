@@ -27,6 +27,119 @@
     },
     onOpen: function (modal) {
       console.log(modal)
+      swal.addControls([
+        {
+          name: 'text',
+          label: 'text input',
+          placeholder: 'text input placeholder',
+          type: 'text',
+          value: 'default value for text',
+          options: {},
+          config: {},
+          validator() {
+            return Promise.resolve()
+          },
+          attributes: {},
+          classes: '',
+          events: {}
+        },
+        {
+          name: 'email',
+          label: 'email input',
+          placeholder: 'email input placeholder',
+          type: 'email',
+          value: 'default value for email',
+          options: {},
+          config: {},
+          validator() {
+            return Promise.resolve()
+          },
+          attributes: {},
+          classes: '',
+          events: {}
+        },
+        {
+          name: 'url',
+          label: 'url input',
+          placeholder: 'url input placeholder',
+          type: 'url',
+          value: 'default value for url',
+          options: {},
+          config: {},
+          validator() {
+            return Promise.resolve()
+          },
+          attributes: {},
+          classes: '',
+          events: {}
+        },
+        {
+          name: 'password',
+          label: 'password input',
+          placeholder: 'password input placeholder',
+          type: 'password',
+          value: 'default value for password',
+          options: {},
+          config: {},
+          validator() {
+            return Promise.resolve()
+          },
+          attributes: {},
+          classes: '',
+          events: {}
+        },
+        {
+          name: 'checkbox',
+          label: 'checkbox input',
+          placeholder: 'checkbox input placeholder',
+          type: 'checkbox',
+          value: ['checkbox_foo', 'checkbox_bar'],
+          options: {
+            checkbox_foo: 'Foo',
+            checkbox_bar: 'Bar'
+          },
+          config: {},
+          validator() {
+            return Promise.resolve()
+          },
+          attributes: {},
+          classes: '',
+          events: {}
+        },
+        {
+          name: 'radio',
+          label: 'radio input',
+          placeholder: 'radio input placeholder',
+          type: 'radio',
+          value: 'radio_bar',
+          options: {
+            radio_foo: 'Foo',
+            radio_bar: 'Bar',
+          },
+          config: {},
+          validator() {
+            return Promise.resolve()
+          },
+          attributes: {},
+          classes: '',
+          events: {}
+        },
+        {
+          name: 'textarea',
+          label: 'textarea input',
+          placeholder: 'textarea input placeholder',
+          type: 'textarea',
+          value: 'default value for textarea',
+          options: {},
+          config: {},
+          validator() {
+            return Promise.resolve()
+          },
+          attributes: {},
+          classes: '',
+          events: {}
+        },
+      ])
     }
   }).then(function (result) {
     console.log(result)

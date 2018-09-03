@@ -78,3 +78,8 @@ export const isToast = () => {
 export const isLoading = () => {
   return getPopup().hasAttribute('data-loading')
 }
+
+// Forms api getters
+export const getForm = () => {
+  return getPopup().querySelector('form');
+}

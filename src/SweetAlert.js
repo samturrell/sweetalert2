@@ -4,6 +4,7 @@ import { version } from '../package.json'
 import * as staticMethods from './staticMethods'
 import * as instanceMethods from './instanceMethods'
 import privateProps from './privateProps'
+import * as formApi from './utils/dom/renderers/form/api'
 
 let currentInstance
 
@@ -56,6 +57,8 @@ SweetAlert.prototype.finally = function (onFinally) {
 
 // Assign instance methods from src/instanceMethods/*.js to prototype
 Object.assign(SweetAlert.prototype, instanceMethods)
+
+Object.assign(SweetAlert, formApi)
 
 // Assign static methods from src/staticMethods/*.js to constructor
 Object.assign(SweetAlert, staticMethods)
